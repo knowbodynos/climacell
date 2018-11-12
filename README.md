@@ -3,20 +3,20 @@
 ***
 # Table of Contents
 
-1. [Goals](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#goals)
-2. [Summary](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#summary)
-3. [Import Packages](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#import)
-4. [Load Data](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#load)
-   1. [Load ASOS CID data](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#CID)
-   2. [Set correct data types](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#types)
-   3. [Handle duplicate and missing data](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#missing)
-5. [Exploratory Data Analysis](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#eda)
-   1. [Plot data](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#plot)
-   2. [Autocorrelation](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#autocorr)
-6. [Model Building](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#model)
-   1. [ARMA Model](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#arma)
-7. [Results](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#results)
-   1. [Forecast](https://github.com/knowbodynos/climacell/blob/master/climacell_new_technologies_homework.ipynb#forecast)
+1. [Goals](./climacell_new_technologies_homework.ipynb#goals)
+2. [Summary](./climacell_new_technologies_homework.ipynb#summary)
+3. [Import Packages](./climacell_new_technologies_homework.ipynb#import)
+4. [Load Data](./climacell_new_technologies_homework.ipynb#load)
+   1. [Load ASOS CID data](./climacell_new_technologies_homework.ipynb#CID)
+   2. [Set correct data types](./climacell_new_technologies_homework.ipynb#types)
+   3. [Handle duplicate and missing data](./climacell_new_technologies_homework.ipynb#missing)
+5. [Exploratory Data Analysis](./climacell_new_technologies_homework.ipynb#eda)
+   1. [Plot data](./climacell_new_technologies_homework.ipynb#plot)
+   2. [Autocorrelation](./climacell_new_technologies_homework.ipynb#autocorr)
+6. [Model Building](./climacell_new_technologies_homework.ipynb#model)
+   1. [ARMA Model](./climacell_new_technologies_homework.ipynb#arma)
+7. [Results](./climacell_new_technologies_homework.ipynb#results)
+   1. [Forecast](./climacell_new_technologies_homework.ipynb#forecast)
 
 ***
 # Goals <a name="goals"></a>
