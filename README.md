@@ -17,6 +17,7 @@
    1. [ARMA Model](./climacell_new_technologies_homework.ipynb#arma)
 7. [Results](./climacell_new_technologies_homework.ipynb#results)
    1. [Forecast](./climacell_new_technologies_homework.ipynb#forecast)
+   2. [Error estimation](./climacell_new_technologies_homework.ipynb#error)
 
 ***
 # Goals <a name="goals"></a>
@@ -39,8 +40,8 @@ To begin my analysis, I simply plotted the time series, along with a monthy and 
 
 As proof of concept, I fit an ARMA(2,2) model to a training set with a random cutoff date, and used it to forecast the temperatures for the next day. I also used the model to predict its training data. Comparing these to the actual temperature values, I computed the root mean squared error (RMSE) metric for both training and test data and found both to be less than 3 degrees F. In addition, the actual temperatures fell well within the confidence interval of the forecast values.
 
-In order to get a better idea of my model accuracy, I plotted the RMSE for both training and test data as I varied the training set cutoff date. I found that the training RMSE stayed constant at ~2.5 degrees F, while the test RMSE fluctuated, but stayed under 6 degrees F.
+To show that ARMA(2,2) is a good model to make this forecast, I trained the model with all combinations of p autoregressive (AR) terms and q moving-average (MA) terms with 0 <= p, q <= 2, and computed both the Akaike information criterion (AIC) and Bayesian information criterion (BIC) for each to minimize the relative information lost by each model, while penalizing a higher number of model parameters. For both metrics, the model with the least information lost is ARMA(2,2), and so I am confident that this model is a good estimate. Then, in order to get a better idea of my model accuracy, I plotted the RMSE for both training and test data as I varied the training set cutoff date. I found that the training RMSE stayed constant at ~2.5 degrees F, while the test RMSE fluctuated, but stayed under 6 degrees F.
 
 Finally, I forecast the temperature at the Cedar Rapids, Iowa (CID) ASOS weather station for 2018-06-01. I found that both the training and test RMSE were ~2.5 degrees F, and that the actual values stayed well within the confidence interval of the forecast.
 
-I think that if it were computationally feasible to implement an ARMA(24,24), using the ACF and PACF peaks around lag 24, I might have been able to achieve even better results. Also, if there were more sources of data available, such as nearby weather stations, CO2 levels, etc. I could implement a multivariate model that might improve performance.
+One way to achieve better performance would be to increase the complexity of the model (i.e. more AR and MA terms). In particular, I think that if it were computationally reasonable to implement an ARMA(24,24), using the ACF and PACF peaks around lag 24, I might have been able to achieve even better results. Also, if there were more sources of data available, such as nearby weather stations, CO2 levels, etc. I could implement a multivariate model that might improve performance.

@@ -1,3 +1,5 @@
 .DS_Store
 .ipynb_checkpoints
 __pycache__
+ross_altman.tar.gz
+exclude.txt
